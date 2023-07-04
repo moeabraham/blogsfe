@@ -1,4 +1,4 @@
-import { useEffect,useState, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../UserContext";
 import BASEURL from '../config';
@@ -18,6 +18,7 @@ export default function Header(){
             })
         })
     },[])
+// },[])
 
 function logout(){
     fetch(`${BASEURL}/logout`, {
@@ -36,7 +37,7 @@ function logout(){
                 {username && (
                     <>
                      <Link to="/create">Create new Post   </Link>
-                    <a onClick={logout}>Logout</a>
+                    <a href="" onClick={logout}>Logout</a>
                     </>
                 ) }
                 {!username && (

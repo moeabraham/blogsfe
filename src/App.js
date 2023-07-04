@@ -1,14 +1,11 @@
 import './App.css';
-import {Routes, Route,Outlet} from "react-router-dom"; 
-import Post from "./components/Post";
-import Header from './components/Header';
+import {Routes, Route} from "react-router-dom"; 
 import Layout from './components/Layout';
 import IndexPage from './pages/IndexPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import CreatePost from './pages/CreatePost';
 import EditPost from './pages/EditPost';
-import DeletePost from './components/DeletePost';
 import PostPage from './pages/PostPage';
 
 import {UserContextProvider} from "./UserContext";

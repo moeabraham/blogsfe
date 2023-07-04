@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css";
 import { Navigate } from "react-router-dom";
 import Editor from '../components/Editor';
@@ -31,7 +30,7 @@ export default function CreatePost(){
             credentials: 'include',
 
         })
-        // console.log(redirect)
+        console.log(response)
 
         if(response.ok){
             setRedirect(true)
