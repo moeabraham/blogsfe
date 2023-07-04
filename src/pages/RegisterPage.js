@@ -6,7 +6,7 @@ import BASEURL from '../config';
 export default function RegisterPage(){
     const[username, setUsername] = useState("");
     const[password, setPassword] = useState("");
-    console.log(BASEURL)
+    // console.log(BASEURL)
    async function register(ev){
     ev.preventDefault();
 
