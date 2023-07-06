@@ -24,6 +24,7 @@ export default function CreatePost(){
         data.set("file", files[0] )
         // console.log(files)
         e.preventDefault();
+        console.log(BASEURL)
         const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
             body: data,
@@ -31,7 +32,7 @@ export default function CreatePost(){
             credentials: 'include',
 
         })
-        console.log(response)
+        console.log(response,"respos")
 
         if(response.ok){
             setRedirect(true)
