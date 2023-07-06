@@ -48,19 +48,26 @@ export default function CreatePost(){
     return(
         <form
         onSubmit={createNewPost}>
-            <input type="title"
+            <input
+            type="text" 
+            name="title"
              placeholder={"title"} 
              value={title}
               onChange={ev => setTitle(ev.target.value)}
                />
 
-            <input type="summary"
+            <input 
+            
+            type="text" 
+            name="summary"
              placeholder={"summary"} 
              value={summary} 
              onChange={ev => setSUmmary(ev.target.value)}
               />
               
-            <input type="file"
+            <input 
+            type="file"
+            name="file"
             //  value={files} 
                 onChange={ev => setFiles(ev.target.files)}
             />
