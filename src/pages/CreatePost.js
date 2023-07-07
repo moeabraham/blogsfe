@@ -18,10 +18,10 @@ export default function CreatePost(){
     
     async function createNewPost(e){
         const data = new FormData();
-        data.set("title", title);
-        data.set("summary", summary);
-        data.set("content", content);
-        data.set("file", files[0] )
+        data.append("title", title);
+        data.append("summary", summary);
+        data.append("content", content);
+        data.append("file", files[0] )
         // console.log(files)
         e.preventDefault();
         console.log(BASEURL)
