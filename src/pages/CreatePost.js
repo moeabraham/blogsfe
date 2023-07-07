@@ -35,7 +35,10 @@ export default function CreatePost(){
         console.log(response,"respos")
 
         if(response.ok){
+            console.log("esha")
             setRedirect(true)
+        } else{
+            console.log("7ah")
         }
         
         if(redirect === true){
