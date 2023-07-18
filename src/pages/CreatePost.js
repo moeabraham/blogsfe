@@ -29,7 +29,7 @@ export default function CreatePost(){
             method:"POST",
             body: data,
             headers: {"Content-Type": "application/json"},
-            mode:"no-cors",
+            // mode:"no-cors",
             credentials: 'include',
 
         })
