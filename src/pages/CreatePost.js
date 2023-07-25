@@ -25,8 +25,7 @@ export default function CreatePost(){
         // console.log(files)
         e.preventDefault();
         console.log(BASEURL)
-        // const response = await fetch(`${BASEURL}/post`,{
-            const response =await fetch("https://blogsfe.netlify.app/post",{
+        const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
             mode:"cors",
             body: data,
