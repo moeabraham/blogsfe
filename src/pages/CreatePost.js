@@ -27,10 +27,13 @@ export default function CreatePost(){
         console.log(BASEURL)
         const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
+            mode:"cors",
             body: data,
             headers: {
                 "Content-Type": "application/json",
-                'Access-Control-Allow-Origin': "*"
+
+                // "Content-Type": "application/json",
+                'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
         },
 
             // mode:"no-cors",
