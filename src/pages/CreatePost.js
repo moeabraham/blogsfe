@@ -29,15 +29,16 @@ export default function CreatePost(){
             method:"POST",
             mode:"cors",
             body: data,
-            headers: {
-                "Content-Type": "application/json",
+            credentials: 'include',
+
+            // headers: {
+                // "Content-Type": "application/json",
 
                 // "Content-Type": "application/json",
-                'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
-        },
+                // 'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
+        // },
 
             // mode:"no-cors",
-            credentials: 'include',
 
         })
         console.log(response,"respos")
