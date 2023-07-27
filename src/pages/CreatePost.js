@@ -39,7 +39,7 @@ export default function CreatePost(){
                 'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
         },
 
-            mode:"no-cors",
+            // mode:"no-cors",
 
         })
         response ? console.log("yalla"): console.log("lesa")
