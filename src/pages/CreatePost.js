@@ -24,7 +24,7 @@ export default function CreatePost(){
         data.append("file", files[0] )
         // console.log(files)
         e.preventDefault();
-        console.log(BASEURL)
+        // console.log(BASEURL)
         const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
             mode:"cors",
@@ -39,7 +39,7 @@ export default function CreatePost(){
                 'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
         },
 
-            // mode:"no-cors",
+            mode:"no-cors",
 
         })
         response ? console.log("yalla"): console.log("lesa")
