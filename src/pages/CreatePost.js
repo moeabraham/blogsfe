@@ -21,7 +21,7 @@ export default function CreatePost(){
         data.append("title", title);
         data.append("summary", summary);
         data.append("content", content);
-        data.append("file", files[0] )
+        // data.append("file", files[0] )
         // console.log(files)
         e.preventDefault();
         // console.log(BASEURL)
