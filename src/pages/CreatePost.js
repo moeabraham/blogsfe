@@ -41,14 +41,15 @@ export default function CreatePost(){
             // mode:"no-cors",
 
         })
+        response ?  setRedirect(true): console.log("lesa")
         console.log(response,"respos")
 
-        if(response.ok){
-            console.log("esha")
-            setRedirect(true)
-        } else{
-            console.log("7ah")
-        }
+        // if(response.ok){
+        //     console.log("esha")
+        //     setRedirect(true)
+        // } else{
+        //     console.log("7ah")
+        // }
         
         if(redirect === true){
          return (<Navigate to={"/login"} />)
