@@ -21,22 +21,21 @@ export default function CreatePost(){
         data.append("title", title);
         data.append("summary", summary);
         data.append("content", content);
-        // data.append("file", files[0] )
+        data.append("file", files[0] )
         // console.log(files)
         e.preventDefault();
-        // console.log(BASEURL)
+        console.log(BASEURL)
         const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
             mode:"cors",
             body: data,
             credentials: 'include',
             // Access-Control-Allow-Origin
-            
         //     headers: {
         //         // "Content-Type": "application/json",
 
         //         // "Content-Type": "application/json",
-        //         // 'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
+        //         'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
         // },
 
             // mode:"no-cors",
