@@ -41,7 +41,7 @@ export default function CreatePost(){
             // mode:"no-cors",
 
         })
-        response ?  setRedirect(true): console.log("lesa")
+        response ? console.log("yalla"): console.log("lesa")
         console.log(response,"respos")
 
         // if(response.ok){
