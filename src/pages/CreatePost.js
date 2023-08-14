@@ -31,12 +31,12 @@ export default function CreatePost(){
             body: data,
             credentials: 'include',
             // Access-Control-Allow-Origin
-            headers: {
-        //         // "Content-Type": "application/json",
+        //     headers: {
+        // //         // "Content-Type": "application/json",
 
-        //         // "Content-Type": "application/json",
-                'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
-        },
+        // //         // "Content-Type": "application/json",
+        //         'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
+        // },
 
             // mode:"no-cors",
 
