@@ -45,6 +45,9 @@ export default function EditPost(){
             method:"PUT",
             body: data,
             credentials: 'include',
+            headers:{
+                "Content-Type":"application/json"
+            },
 
         })
         console.log(response)
