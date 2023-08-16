@@ -28,7 +28,7 @@ export default function CreatePost(){
         const response = await fetch(`${BASEURL}/post`,{
             method:"POST",
             // mode:"cors",
-            body: data,
+            body: JSON.stringify(data),
             credentials: 'include',
             // Access-Control-Allow-Origin
             headers: {
