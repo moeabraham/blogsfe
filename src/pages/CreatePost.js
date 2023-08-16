@@ -35,7 +35,7 @@ export default function CreatePost(){
         // //         // "Content-Type": "application/json",
 
                "Content-Type": "application/json",
-        //         'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
+                'Access-Control-Allow-Origin': "https://blogsfe.netlify.app/"
         },
 
             // mode:"no-cors",
